@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#e4e3e3"
+    android:minHeight="150dp"
+    android:minWidth="300dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:elevation="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/ic_warning_black_24dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/custom_title"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="Warning"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent"/>
+            <TextView
+                android:id="@+id/custom_message"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:typeface="monospace"
+                android:maxLines="2"
+                android:text="Invalid Arguments"/>
+            <TextView
+                android:gravity="center"
+                android:id="@+id/custom_ok"
+                android:layout_margin="10dp"
+                android:textStyle="bold|italic"
+                android:textColor="#5f0074"
+                android:layout_gravity="end"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="OK"
+                android:layout_width="60dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

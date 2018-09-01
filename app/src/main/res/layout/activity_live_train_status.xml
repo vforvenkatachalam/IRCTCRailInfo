@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/live_train_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".3"
+                    android:hint="Train Number"
+                    android:textColorHint="#FFF"
+                    android:inputType="number"
+                    android:typeface="serif"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".3">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight=".3"
+                        android:id="@+id/live_train_today"
+                        android:text="Today"
+                        android:maxLines="1"
+                        android:textColor="#FFF"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/live_train_date"
+                        android:layout_weight=".4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:hint="date"
+                        android:inputType="date"
+                        android:gravity="center"
+                        android:textColorHint="#FFF"
+                        android:typeface="serif"/>
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight=".3"
+                        android:text="Tomorrow"
+                        android:maxLines="1"
+                        android:id="@+id/live_train_tomorrow"
+                        android:textColor="#FFF"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/live_train_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".3"
+                    android:typeface="monospace"
+                    android:textColor="#FFF"
+                    android:text="GET STATUS"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/live_train_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+</LinearLayout>

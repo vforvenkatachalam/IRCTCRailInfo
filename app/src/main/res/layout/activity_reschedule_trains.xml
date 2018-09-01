@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:minHeight="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:maxLines="1"
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:id="@+id/rescheduled_today"
+                    android:text="Today"
+                    android:textColor="#FFF"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/rescheduled_date"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_weight=".4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="date"
+                    android:inputType="date"
+                    android:gravity="center"
+                    android:textColorHint="#FFF"
+                    android:typeface="serif"/>
+                <Button
+                    android:maxLines="1"
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:text="Tomorrow"
+                    android:textColorHint="#FFF"
+                    android:id="@+id/rescheduled_tomorrow"
+                    android:textColor="#FFF"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/rescheduled_train"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="monospace"
+                android:textColor="#FFF"
+                android:text="RESCHEDULED TRAINS"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+<FrameLayout
+    android:id="@+id/rescheduled_frag"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</FrameLayout>
+</LinearLayout>
